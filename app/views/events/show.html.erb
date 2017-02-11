@@ -1,0 +1,10 @@
+<h1><%= @event.name %></h1>
+
+<%= simple_format @event.description %>
+
+<p><%= link_to "Back to Events", events_path %></p>
+
+<h2>Comments</h2>
+
+<%= render 'comments/comments' %>
+<%= render 'comments/form' %>
